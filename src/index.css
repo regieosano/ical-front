@@ -11,3 +11,114 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbar-brand {
+  color: #1a1aff;
+}
+
+.label-title-text {
+  font-size: 14px;
+}
+
+.cal-link-hover:hover {
+  cursor: pointer;
+}
+
+.cal-link-style {
+  font-size: 16px;
+  color: #1a1aff;
+}
+
+.header-text {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 3px;
+}
+
+.filter-title-text {
+  text-align: middle;
+}
+
+.title-text-right-aligned {
+  text-align: right;
+}
+
+.download-button {
+  text-align: center;
+}
+
+.download-calendar-text {
+  color: #fff;
+}
+
+.select-option-text {
+  font-size: 14px;
+}
+
+.filter-selection-text {
+  font-size: 12px;
+}
+
+.card-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+.download-link-container {
+  display: flex;
+  align-items: center; ;
+  justify-content: space-around;
+  padding: 30px 0;
+}
+
+.calendar-link-container {
+  display: flex;
+  align-items: center; ;
+  justify-content: space-around;
+}
+
+.filter-sports-container {
+  display: flex;
+  align-items: left;
+ 
+}
+
+.card-space-above {
+  margin-top: 40px;
+  width: 50rem;
+}
+
+.navbar-brand img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.btn {
+  font-size: 15px;
+}
+
+.btn-primary,
+.bg-primary {
+  background-color: #3385ff !important;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #3385ff;
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background-color: #7430f9;
+}
+
+.btn-secondary:hover {
+  background-color: #7430f9;
+  opacity: 0.9;
+}
+
+.icon {
+  margin-right: 5px;
+}

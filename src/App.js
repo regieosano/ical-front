@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
+import Home from "./components/Home";
+import snap_logo_side from "./components/assets/logo_snapraise_small.png"
+
+const client = new ApolloClient({
+  uri: "http://localhost:4005/graphql",
+  cache: new InMemoryCache(),
+});
 
 function App() {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ApolloProvider client={client}>
+        <Header />
+        <div className="container">
+          <div className="mt-5 title-text-right-aligned">
+             <img src={snap_logo_side} alt="snap_logo" />
+          </div>
+          <Home />
+        </div>
+      </ApolloProvider>
+    </>
   );
 }
 
